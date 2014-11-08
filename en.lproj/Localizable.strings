@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  Skoka?
+
+  Created by Igor Kovrizhkin on 11/6/14.
+  Copyright (c) 2014 IgorKovrizhkin. All rights reserved.
+*/
+
+"Executable name" = "How Much?";
+"Bundle name" = "How Much?";
+"Скидываемся по %@. Всего %@" = "Total is %2$@          Chip in by %1$@";
+"Погоди" = "No Way";
+"чет с цифрами не то" = "Something is wrong with numbers";
+"А, ок" = "let's take a look";

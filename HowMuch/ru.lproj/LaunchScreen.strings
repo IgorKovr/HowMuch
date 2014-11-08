@@ -1,0 +1,21 @@
+
+/* Class = "IBUISegmentedControl"; Eyj-FV-pK6.segmentTitles[0] = "-"; ObjectID = "Eyj-FV-pK6"; */
+"Eyj-FV-pK6.segmentTitles[0]" = "-";
+
+/* Class = "IBUISegmentedControl"; Eyj-FV-pK6.segmentTitles[1] = "+"; ObjectID = "Eyj-FV-pK6"; */
+"Eyj-FV-pK6.segmentTitles[1]" = "+";
+
+/* Class = "IBUILabel"; text = "Скока брали?"; ObjectID = "LIv-cB-DLj"; */
+"LIv-cB-DLj.text" = "Скока брали?";
+
+/* Class = "IBUILabel"; text = "Скока за один?"; ObjectID = "Sag-kZ-EzF"; */
+"Sag-kZ-EzF.text" = "Скока за один?";
+
+/* Class = "IBUILabel"; text = "Скока?"; ObjectID = "YHY-Qm-2MZ"; */
+"YHY-Qm-2MZ.text" = "Скока?";
+
+/* Class = "IBUILabel"; text = "Скока чел?"; ObjectID = "eZ1-S5-yYl"; */
+"eZ1-S5-yYl.text" = "Скока чел?";
+
+/* Class = "IBUIButton"; normalTitle = "Так скока?!"; ObjectID = "wBN-1a-WQ1"; */
+"wBN-1a-WQ1.normalTitle" = "Так скока?!";

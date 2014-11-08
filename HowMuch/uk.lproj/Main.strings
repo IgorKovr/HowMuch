@@ -1,0 +1,39 @@
+
+/* Class = "IBUILabel"; text = "Скока брали?"; ObjectID = "58I-23-Qqp"; */
+"58I-23-Qqp.text" = "Скока брали?";
+
+/* Class = "IBUILabel"; text = "Скидываемся по 17.50, всего 170"; ObjectID = "EIy-rs-h9H"; */
+"EIy-rs-h9H.text" = "Скидываемся по 17.50, всего 170";
+
+/* Class = "IBUITextField"; text = "2.5"; ObjectID = "K1H-4x-gUv"; */
+"K1H-4x-gUv.text" = "2.5";
+
+/* Class = "IBUITextField"; text = "4"; ObjectID = "SJJ-GL-paT"; */
+"SJJ-GL-paT.text" = "4";
+
+/* Class = "IBUITextField"; text = "50"; ObjectID = "WSz-sb-oYu"; */
+"WSz-sb-oYu.text" = "50";
+
+/* Class = "IBUILabel"; text = "Скока за один?"; ObjectID = "daD-3Q-HaT"; */
+"daD-3Q-HaT.text" = "Скока за один?";
+
+/* Class = "IBUIButton"; normalTitle = "Так скока?!"; ObjectID = "nKW-eE-8D4"; */
+"nKW-eE-8D4.normalTitle" = "Так скока?!";
+
+/* Class = "IBUILabel"; text = "Скока?"; ObjectID = "nUO-LG-UOp"; */
+"nUO-LG-UOp.text" = "Скока?";
+
+/* Class = "IBUISegmentedControl"; nwm-Oi-6DC.segmentTitles[0] = "-"; ObjectID = "nwm-Oi-6DC"; */
+"nwm-Oi-6DC.segmentTitles[0]" = "-";
+
+/* Class = "IBUISegmentedControl"; nwm-Oi-6DC.segmentTitles[1] = "25"; ObjectID = "nwm-Oi-6DC"; */
+"nwm-Oi-6DC.segmentTitles[1]" = "25";
+
+/* Class = "IBUISegmentedControl"; nwm-Oi-6DC.segmentTitles[2] = "35"; ObjectID = "nwm-Oi-6DC"; */
+"nwm-Oi-6DC.segmentTitles[2]" = "35";
+
+/* Class = "IBUISegmentedControl"; nwm-Oi-6DC.segmentTitles[3] = "+"; ObjectID = "nwm-Oi-6DC"; */
+"nwm-Oi-6DC.segmentTitles[3]" = "+";
+
+/* Class = "IBUILabel"; text = "Скока вас?"; ObjectID = "sS6-DI-vu7"; */
+"sS6-DI-vu7.text" = "Скока вас?";

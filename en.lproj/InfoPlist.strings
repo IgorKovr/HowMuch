@@ -1,0 +1,10 @@
+/* 
+  InfoPlist.strings
+  Skoka?
+
+  Created by Igor Kovrizhkin on 11/7/14.
+  Copyright (c) 2014 IgorKovrizhkin. All rights reserved.
+*/
+
+"CFBundleDisplayName" = "How Much?";
+"CFBundleName" = "How Much?";
