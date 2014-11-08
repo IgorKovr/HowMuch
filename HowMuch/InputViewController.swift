@@ -7,7 +7,7 @@
 //
 
 import Foundation
-//import Crashlytics
+import Crashlytics
 
 import UIKit
 
@@ -21,7 +21,7 @@ class InputViewController: UIViewController {
     @IBOutlet weak var finalTextField: UILabel!
     @IBOutlet weak var segmentControl : UISegmentedControl!
     @IBOutlet weak var scrollView: UIScrollView!
-    // Calculates fee
+    
     @IBAction func calculateButtonTap(sender: UIButton) {
         var time = NSString(string: fieldTimeLast.text)
         var cost = NSString(string: fieldPerHour.text)
@@ -60,6 +60,7 @@ class InputViewController: UIViewController {
         case sender.numberOfSegments-1 :
             addSegment();
             archiveSegments()
+            archiveFields()
         break;
         default  : ()
             fieldPerHour.text = sender.titleForSegmentAtIndex(selectedSegment)
@@ -76,16 +77,11 @@ class InputViewController: UIViewController {
         }
     }
     
-//    func setup() {
-//        NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillShow:", name: UIKeyboardWillShowNotification, object: nil);
-//        NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillHide:", name: UIKeyboardWillHideNotification, object: nil)
-//    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         finalTextField.text = ""
         var array : NSArray = [];
-//        setup()
         
         if let tempArray: NSArray = NSUserDefaults.standardUserDefaults().arrayForKey("keySave") {
             array = tempArray.mutableCopy() as NSMutableArray
@@ -118,8 +114,8 @@ class InputViewController: UIViewController {
     func addSegment() {
         segmentControl.insertSegmentWithTitle(fieldPerHour.text,
             atIndex: segmentControl.numberOfSegments-1, animated: false)
-//        Crashlytics.sharedInstance().setObjectValue(fieldPerHour.text, forKey: "");
-        archiveSegments()
+        Crashlytics.sharedInstance().setObjectValue(fieldPerHour.text, forKey: "+");
+        iRate.sharedInstance().promptIfAllCriteriaMet()
     }
     
     func archiveSegments() {
@@ -132,43 +128,26 @@ class InputViewController: UIViewController {
             array.append(segmentControl.titleForSegmentAtIndex(i)!)
         }
         
-        //save
         var defaults = NSUserDefaults.standardUserDefaults()
         defaults.setObject(array, forKey: key)
         defaults.synchronize()
     }
     
     func archiveFields() {
-        
         var defaults = NSUserDefaults.standardUserDefaults()
         defaults.setObject(fieldPerHour.text, forKey:  "hour")
         defaults.setObject(fieldPerson.text,  forKey:  "person")
         defaults.setObject(fieldTimeLast.text, forKey: "timeLast")
         defaults.synchronize()
-        
-        if let hour = NSUserDefaults.standardUserDefaults().stringForKey("hour"){
-            fieldPerHour.text = hour;
-        }
-        
-        if let person = NSUserDefaults.standardUserDefaults().stringForKey("person"){
-            fieldPerson.text = person;
-        }
-        
-        if let timeLast = NSUserDefaults.standardUserDefaults().stringForKey("timeLast"){
-            fieldTimeLast.text = timeLast;
-        }
     }
     
-    // hide status bar
     override func prefersStatusBarHidden() -> Bool {
         return false
     }
     
-//    func textFieldDidBeginEditing(textField: UITextField){
-//        finalTextField.text = ""
-//        self.scrollView.scrollRectToVisible(textField.frame, animated: true)
-//    }
-    
+    func textFieldDidBeginEditing(textField: UITextField){
+        finalTextField.text = ""
+    }
     
     func delay(delay:Double, closure:()->()) {
         dispatch_after(
@@ -179,24 +158,4 @@ class InputViewController: UIViewController {
             dispatch_get_main_queue(), closure)
     }
     
-    //Handles keyboard appearance
-//    func keyboardWillShow(notification:NSNotification){
-//        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.CGRectValue() {
-//            if !keyboardIsShown {
-//                    
-//                var newInset : UIEdgeInsets = self.scrollView.contentInset;
-//                newInset.bottom = keyboardSize.height;
-//                self.scrollView.contentInset = newInset;
-//                    
-//                self.scrollView .setContentOffset(CGPointMake(0, keyboardSize.height/2), animated: true)
-//            }
-//            keyboardIsShown = true
-//        }
-//    }
-//    
-//    func keyboardWillHide(notification:NSNotification){
-//        self.scrollView.contentInset = UIEdgeInsetsZero
-//        keyboardIsShown = false
-//    }
-
 }

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Crashlytics
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,10 +17,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        Crashlytics.startWithAPIKey("466793bd001743e1e1e262a55b29a514e6709d67")
+        iRate.sharedInstance().usesUntilPrompt = 2
+        iRate.sharedInstance().daysUntilPrompt = 1
+        iRate.sharedInstance().promptAtLaunch = false
         return true
     }
 
     func applicationWillResignActive(application: UIApplication) {
+        
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
     }
