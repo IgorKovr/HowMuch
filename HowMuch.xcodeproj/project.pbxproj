@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		A10F18AF1A0EAB2D00E2F51F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10F18AE1A0EAB2D00E2F51F /* AppDelegate.swift */; };
-		A10F18B11A0EAB2D00E2F51F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10F18B01A0EAB2D00E2F51F /* ViewController.swift */; };
 		A10F18B91A0EAB2D00E2F51F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A10F18B71A0EAB2D00E2F51F /* LaunchScreen.xib */; };
 		A10F18C51A0EAB2D00E2F51F /* HowMuchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10F18C41A0EAB2D00E2F51F /* HowMuchTests.swift */; };
 		A10F18CF1A0EAC4800E2F51F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A10F18CE1A0EAC4800E2F51F /* Images.xcassets */; };
@@ -37,7 +36,6 @@
 		A10F18A91A0EAB2D00E2F51F /* HowMuch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HowMuch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A10F18AD1A0EAB2D00E2F51F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A10F18AE1A0EAB2D00E2F51F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A10F18B01A0EAB2D00E2F51F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A10F18B81A0EAB2D00E2F51F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		A10F18BE1A0EAB2D00E2F51F /* HowMuchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HowMuchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A10F18C31A0EAB2D00E2F51F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -108,7 +106,6 @@
 				A10F18D01A0EAE0400E2F51F /* ChipInModel.swift */,
 				A10F18AE1A0EAB2D00E2F51F /* AppDelegate.swift */,
 				A10F18D61A0EAE2300E2F51F /* InputViewController.swift */,
-				A10F18B01A0EAB2D00E2F51F /* ViewController.swift */,
 				A10F18CE1A0EAC4800E2F51F /* Images.xcassets */,
 				A10F18DC1A0EB29E00E2F51F /* Main.storyboard */,
 				A10F18B71A0EAB2D00E2F51F /* LaunchScreen.xib */,
@@ -295,7 +292,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A10F18B11A0EAB2D00E2F51F /* ViewController.swift in Sources */,
 				A10F18AF1A0EAB2D00E2F51F /* AppDelegate.swift in Sources */,
 				A10F18D11A0EAE0400E2F51F /* ChipInModel.swift in Sources */,
 				A10F18D71A0EAE2300E2F51F /* InputViewController.swift in Sources */,

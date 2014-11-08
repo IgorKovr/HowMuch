@@ -14,11 +14,11 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="321" placeholderIntrinsicHeight="480" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" keyboardDismissMode="onDrag" translatesAutoresizingMaskIntoConstraints="NO" id="2WL-F0-fxK" customClass="TPKeyboardAvoidingScrollView">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <subviews>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Скока за один?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="daD-3Q-HaT">
                                         <rect key="frame" x="20" y="135" width="185" height="21"/>
@@ -30,10 +30,10 @@
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Скока чел?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sS6-DI-vu7">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Скока вас?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sS6-DI-vu7">
                                         <rect key="frame" x="20" y="290" width="185" height="21"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="21" id="ndB-mK-cY8"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" priority="250" constant="21" id="ndB-mK-cY8"/>
                                             <constraint firstAttribute="width" constant="185" id="szf-XZ-8cg"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -106,7 +106,7 @@
                                         </connections>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nKW-eE-8D4">
-                                        <rect key="frame" x="77" y="416" width="172" height="60"/>
+                                        <rect key="frame" x="77" y="460" width="172" height="60"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="172" id="fY3-po-Ad2"/>
                                             <constraint firstAttribute="height" constant="60" id="vXD-d7-Fvc"/>
@@ -121,9 +121,9 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Скидываемся по 17.50, всего 170" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EIy-rs-h9H">
-                                        <rect key="frame" x="-7" y="341" width="336" height="76"/>
+                                        <rect key="frame" x="20" y="385" width="275" height="76"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="336" id="krl-53-qbX"/>
+                                            <constraint firstAttribute="width" constant="275" id="krl-53-qbX"/>
                                             <constraint firstAttribute="height" constant="76" id="u6F-aO-zVl"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -144,7 +144,7 @@
                                 <constraints>
                                     <constraint firstAttribute="centerX" secondItem="nKW-eE-8D4" secondAttribute="centerX" constant="-3" id="3fZ-lW-iAJ"/>
                                     <constraint firstItem="sS6-DI-vu7" firstAttribute="top" secondItem="58I-23-Qqp" secondAttribute="bottom" constant="55" id="53j-VO-w6x"/>
-                                    <constraint firstAttribute="centerX" secondItem="EIy-rs-h9H" secondAttribute="centerX" constant="-1" id="9EH-uL-taP"/>
+                                    <constraint firstAttribute="centerX" secondItem="EIy-rs-h9H" secondAttribute="centerX" constant="2.5" id="9EH-uL-taP"/>
                                     <constraint firstAttribute="trailing" secondItem="SJJ-GL-paT" secondAttribute="trailing" constant="20" id="AV3-b7-YPe"/>
                                     <constraint firstItem="nKW-eE-8D4" firstAttribute="top" secondItem="EIy-rs-h9H" secondAttribute="bottom" constant="-1" id="CRq-2j-Xsh"/>
                                     <constraint firstItem="daD-3Q-HaT" firstAttribute="leading" secondItem="2WL-F0-fxK" secondAttribute="leading" constant="20" id="NTu-Vx-CJV"/>
@@ -173,11 +173,11 @@
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="2WL-F0-fxK" secondAttribute="bottom" id="G1u-S3-qNh"/>
-                            <constraint firstItem="2WL-F0-fxK" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="Jci-Jl-fVO"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="2WL-F0-fxK" secondAttribute="bottom" id="VFB-G8-XaN"/>
-                            <constraint firstItem="2WL-F0-fxK" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="WRL-P4-HA4"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="2WL-F0-fxK" secondAttribute="bottom" id="5bs-JD-rjF"/>
+                            <constraint firstItem="2WL-F0-fxK" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="F2s-cF-CX1"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="2WL-F0-fxK" secondAttribute="bottom" id="Y62-MY-HjO"/>
                             <constraint firstAttribute="trailing" secondItem="2WL-F0-fxK" secondAttribute="trailing" id="auP-IZ-NYq"/>
+                            <constraint firstItem="2WL-F0-fxK" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="bdR-LP-fd6"/>
                             <constraint firstItem="2WL-F0-fxK" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="ijd-wi-dLt"/>
                         </constraints>
                     </view>
@@ -185,8 +185,10 @@
                     <nil key="simulatedStatusBarMetrics"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <nil key="simulatedBottomBarMetrics"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
+                        <outlet property="buttonCalculate" destination="nKW-eE-8D4" id="Yk5-aL-e2p"/>
+                        <outlet property="buttonCalculateBottomConstraint" destination="CRq-2j-Xsh" id="zxK-bH-90k"/>
                         <outlet property="fieldPerHour" destination="WSz-sb-oYu" id="rJx-el-7vO"/>
                         <outlet property="fieldPerson" destination="SJJ-GL-paT" id="0sb-QC-vlI"/>
                         <outlet property="fieldTimeLast" destination="K1H-4x-gUv" id="5XD-DT-g5j"/>
@@ -197,7 +199,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-621" y="496"/>
+            <point key="canvasLocation" x="-638" y="421"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

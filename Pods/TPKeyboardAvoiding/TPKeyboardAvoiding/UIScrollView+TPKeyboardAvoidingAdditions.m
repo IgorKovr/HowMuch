@@ -150,7 +150,7 @@ static const int kStateKey;
     CGFloat visibleSpace = self.bounds.size.height - self.contentInset.top - self.contentInset.bottom;
     
     CGPoint idealOffset = CGPointMake(0, [self TPKeyboardAvoiding_idealOffsetForView:[self TPKeyboardAvoiding_findFirstResponderBeneathView:self]
-                                                               withViewingAreaHeight:visibleSpace]);
+                                                               withViewingAreaHeight:visibleSpace] + 40.0);
 
     // Ordinarily we'd use -setContentOffset:animated:YES here, but it does not appear to
     // scroll to the desired content offset. So we wrap in our own animation block.

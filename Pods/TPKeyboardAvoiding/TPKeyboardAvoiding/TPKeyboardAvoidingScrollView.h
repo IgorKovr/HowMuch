@@ -8,6 +8,10 @@
 #import <UIKit/UIKit.h>
 #import "UIScrollView+TPKeyboardAvoidingAdditions.h"
 
+@protocol TPKeyboardAvoidingScrollViewDelegate <NSObject>
+
+@end
+
 @interface TPKeyboardAvoidingScrollView : UIScrollView <UITextFieldDelegate, UITextViewDelegate>
 - (void)contentSizeToFit;
 - (BOOL)focusNextTextField;
