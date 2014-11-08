@@ -1,0 +1,13 @@
+PODS:
+  - iRate (1.11.3)
+  - TPKeyboardAvoiding (1.2.4)
+
+DEPENDENCIES:
+  - iRate
+  - TPKeyboardAvoiding
+
+SPEC CHECKSUMS:
+  iRate: 5e1978bac8b3f3f0296dbeccc0dd7b50e6e50657
+  TPKeyboardAvoiding: 925e1e1912597d1a4956697eec3bd9656552153c
+
+COCOAPODS: 0.33.1

@@ -1,0 +1,14 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, "6.0"
+
+target "HowMuch" do
+
+pod 'iRate'
+pod 'TPKeyboardAvoiding'
+
+end
+
+target "HowMuchTests" do
+
+end
+
