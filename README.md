@@ -1,5 +1,7 @@
 HowMuch
 =======
+avaliable in the appStore 
+https://itunes.apple.com/us/app/how-much-chip-in-in-beautiful/id937700691?l=ru&ls=1&mt=8
 
 HowMuch is a swift application for chipping in. 
 It is Localized in 4 different languages.
